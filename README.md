@@ -1,6 +1,7 @@
 # 360-Customer-View
 
 Introduction
+
 In modern organizations, understanding customers from multiple perspectives is vital for effective decision-making. Businesses analyze dimensions such as customer loyalty (e.g., years of history, frequency of interaction) and demographics (e.g., stage of life, income). These dimensions collectively provide a 360-degree customer view, offering insights into various aspects simultaneously.
 
 However, achieving this comprehensive view presents challenges like:
@@ -12,6 +13,7 @@ Data Change: Adapting to dynamic data structures and content.
 This Project focuses on creating a Customer 360 View for a hypothetical company by addressing these challenges with AWS services.
 
 Architecture Overview
+
 Tools and Frameworks
 Data Extraction:
 
@@ -46,18 +48,22 @@ RawDataS3Bucket, StageDataS3Bucket, AnalyticsDataS3Bucket, LogDataS3Bucket.
 RDS Instance:
 
 Aurora PostgreSQL for simulating transaction data.
+
 AWS Lambda Functions:
 
 Simulate external integrations like CRM data, mainframe extracts, and Google Analytics.
 Amazon EMR Cluster:
 
 For advanced processing of Spark and Hive workloads.
+
 EventBridge Rules:
 
 Schedule Lambda executions for data ingestion.
+
 IAM Roles:
 
 Defined for Glue and Lambda functions to manage permissions securely.
 
 Summary
+
 In this project, we use AWS Glue, Amazon S3, Amazon EMR, and other AWS tools to integrate data from various sources. By solving real-world challenges, you'll build a Customer 360 View, gaining hands-on experience with scalable data pipelines and AWS analytics solutions.
